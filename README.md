@@ -4,15 +4,15 @@ A dark Neovim colorscheme with selective vibrancy — keywords, functions, types
 
 ## Variants
 
-### tide (default)
+### void (default)
 
-Cool, deep oceanic dark theme. Dark blue-green background with vibrant syntax accents.
+Pure black monochrome. Minimal color, maximum focus. Keywords are bright white, everything else is shades of gray with barely-there tints.
 
-- Background: `#0F191F` (deep ocean)
-- Keywords: muted lavender | Functions: golden yellow | Types: cyan/teal
-- Strings: olive green (muted) | Operators: gray (muted)
+- Background: `#000000` (pure black)
+- Keywords: bright white | Functions: warm off-white | Types: cool gray
+- Strings: dark muted green | Operators: dark gray
 
-### ember
+### tide
 
 Warm charcoal background with amber/red-shifted accents. Cozy, fireside feel.
 
@@ -55,7 +55,7 @@ Near-monochrome with minimal color. Maximum subtlety for distraction-free coding
   priority = 1000,
   config = function()
     require("aashbones").setup({
-      variant = "tide",       -- default variant
+      variant = "void",       -- default variant
       transparent = true,     -- optional: transparent background
     })
     vim.cmd.colorscheme("aashbones")
@@ -91,7 +91,7 @@ Call `setup()` **before** setting the colorscheme:
 
 ```lua
 require("aashbones").setup({
-  variant = "tide",           -- color variant (default: "tide")
+  variant = "void",           -- color variant (default: "void")
   transparent = false,        -- transparent backgrounds
   italic_comments = true,     -- italicize comments
   bold_keywords = true,       -- bold keywords (if, for, return, etc.)

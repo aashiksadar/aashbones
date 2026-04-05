@@ -1,7 +1,7 @@
 local M = {}
 
 M.config = {
-  variant = "tide",
+  variant = "void",
   transparent = false,
   italic_comments = true,
   bold_keywords = true,
