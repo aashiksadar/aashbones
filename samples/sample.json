@@ -1,0 +1,23 @@
+{
+  "name": "aashbones",
+  "version": "1.0.0",
+  "description": "A muted Neovim colorscheme with enhanced syntax distinction",
+  "author": "Aashik Sadar",
+  "license": "MIT",
+  "config": {
+    "transparent": false,
+    "italic_comments": true,
+    "bold_keywords": true,
+    "colors": {
+      "background": "#0F191F",
+      "foreground": "#C6D5CF",
+      "functions": "#7EB8C9",
+      "strings": "#A8C4A0",
+      "constants": "#D4A76A",
+      "operators": "#9A8FBF"
+    },
+    "languages": ["go", "typescript", "rust", "kotlin", "html", "css", "sql"],
+    "max_line_length": 120,
+    "enabled": true
+  }
+}
