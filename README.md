@@ -8,19 +8,41 @@ A dark Neovim colorscheme with selective vibrancy — keywords, functions, types
 
 Cool, deep oceanic dark theme. Dark blue-green background with vibrant syntax accents.
 
-| Role | Color | Hex |
-|---|---|---|
-| Keywords | Magenta (bold) | `#C678DD` |
-| Functions | Golden yellow | `#E5C07B` |
-| Types | Cyan/teal (bold) | `#56B6C2` |
-| Constants | Orange | `#D19A66` |
-| Parameters | Soft red | `#E06C75` |
-| Strings | Olive green (muted) | `#7A9A6D` |
-| Operators | Gray (muted) | `#7E8A8F` |
-| Comments | Dark gray (italic) | `#536977` |
-| Background | Deep ocean | `#0F191F` |
+- Background: `#0F191F` (deep ocean)
+- Keywords: muted lavender | Functions: golden yellow | Types: cyan/teal
+- Strings: olive green (muted) | Operators: gray (muted)
 
-More variants coming soon.
+### ember
+
+Warm charcoal background with amber/red-shifted accents. Cozy, fireside feel.
+
+- Background: `#1A1210` (dark charcoal)
+- Keywords: warm terracotta | Functions: warm gold | Types: burnt sienna
+- Strings: dry sage | Operators: warm gray
+
+### frost
+
+Cool blue-silver tones with a crisp, icy aesthetic.
+
+- Background: `#0E1418` (dark ice)
+- Keywords: ice blue-violet | Functions: silver-blue | Types: pale cyan
+- Strings: cool sage | Operators: cool gray
+
+### dune
+
+Warm sandy/earthy tones — desert at twilight.
+
+- Background: `#181410` (dark sand)
+- Keywords: warm clay | Functions: golden sand | Types: terracotta
+- Strings: sage brush | Operators: sand gray
+
+### ash
+
+Near-monochrome with minimal color. Maximum subtlety for distraction-free coding.
+
+- Background: `#141414` (neutral dark)
+- Keywords: faint lavender | Functions: warm off-white | Types: faint teal-gray
+- Strings: barely-green gray | Operators: neutral gray
 
 ## Installation
 
