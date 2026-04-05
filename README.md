@@ -180,4 +180,4 @@ Inspired by [neobones](https://github.com/zenbones-theme/zenbones.nvim) by mcchr
 
 ## License
 
-[MIT](LICENSE)
+[CC BY-NC 4.0](LICENSE) — free to use, modify, and distribute; not for commercial sale.
