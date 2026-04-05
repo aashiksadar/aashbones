@@ -22,7 +22,7 @@ function M.apply(p, config)
   hl("lCursor",       { link = "Cursor" })
   hl("TermCursor",    { link = "Cursor" })
   hl("TermCursorNC",  { link = "lCursor" })
-  hl("CursorLine",    { bg = p.bg1 })
+  hl("CursorLine",    { bg = config.transparent and p.bg5 or p.bg1 })
   hl("CursorColumn",  { link = "CursorLine" })
   hl("CursorLineNr",  { fg = p.fg, bold = true })
   hl("ColorColumn",   { bg = p.color_column })
@@ -43,8 +43,8 @@ function M.apply(p, config)
 
   hl("Pmenu",         { fg = p.fg, bg = p.bg3 })
   hl("PmenuSel",      { bg = p.bg5 })
-  hl("PmenuSbar",     { bg = "#405A6B" })
-  hl("PmenuThumb",    { bg = "#60869D" })
+  hl("PmenuSbar",     { bg = p.pmenu_sbar })
+  hl("PmenuThumb",    { bg = p.pmenu_thumb })
 
   hl("Visual",        { bg = p.visual })
   hl("Search",        { fg = p.fg, bg = p.search })
@@ -88,7 +88,7 @@ function M.apply(p, config)
   ---------------------------------------------------------------------------
   -- Syntax (enhanced distinction)
   ---------------------------------------------------------------------------
-  hl("Comment",       vim.tbl_extend("force", { fg = "#536977" }, comment_style))
+  hl("Comment",       vim.tbl_extend("force", { fg = p.comment }, comment_style))
   hl("Constant",      { fg = p.constant, italic = true })
   hl("String",        { fg = p.string })
   hl("Character",     { fg = p.string })
@@ -122,8 +122,8 @@ function M.apply(p, config)
   hl("Special",       { fg = p.fg3, bold = true })
   hl("SpecialChar",   { link = "Special" })
   hl("Tag",           { link = "Special" })
-  hl("Delimiter",     { fg = "#5B7E94" })
-  hl("SpecialComment", { fg = "#536977" })
+  hl("Delimiter",     { fg = p.delimiter })
+  hl("SpecialComment", { fg = p.comment })
   hl("Debug",         { link = "Special" })
 
   ---------------------------------------------------------------------------
@@ -352,7 +352,7 @@ function M.apply(p, config)
   ---------------------------------------------------------------------------
   -- Neo-tree
   ---------------------------------------------------------------------------
-  local neo_bg = config.transparent and "NONE" or "#1C1C1C"
+  local neo_bg = config.transparent and "NONE" or p.neo_tree_bg
   hl("NeoTreeNormal",         { fg = p.fg, bg = neo_bg })
   hl("NeoTreeNormalNC",       { link = "NeoTreeNormal" })
   hl("NeoTreeDirectoryName",  { fg = p.sky })

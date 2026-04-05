@@ -1,6 +1,7 @@
 local M = {}
 
 function M.apply(p)
+  -- Dark colors (0-7)
   vim.g.terminal_color_0  = p.bg
   vim.g.terminal_color_1  = p.rose
   vim.g.terminal_color_2  = p.leaf
@@ -9,14 +10,16 @@ function M.apply(p)
   vim.g.terminal_color_5  = p.blossom
   vim.g.terminal_color_6  = p.sky
   vim.g.terminal_color_7  = p.fg
-  vim.g.terminal_color_8  = "#263945"
-  vim.g.terminal_color_9  = "#E8838F"
-  vim.g.terminal_color_10 = "#A0FF85"
-  vim.g.terminal_color_11 = "#D68C67"
-  vim.g.terminal_color_12 = "#92A0E2"
-  vim.g.terminal_color_13 = "#CF86C1"
-  vim.g.terminal_color_14 = "#7EB8C9"
-  vim.g.terminal_color_15 = p.fg4
+
+  -- Bright colors (8-15) — lighter variants of 0-7
+  vim.g.terminal_color_8  = p.bg5
+  vim.g.terminal_color_9  = p.param
+  vim.g.terminal_color_10 = p.leaf
+  vim.g.terminal_color_11 = p.constant
+  vim.g.terminal_color_12 = p.builtin
+  vim.g.terminal_color_13 = p.keyword
+  vim.g.terminal_color_14 = p.type
+  vim.g.terminal_color_15 = p.fg1
 end
 
 return M

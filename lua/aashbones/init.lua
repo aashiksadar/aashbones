@@ -25,8 +25,10 @@ function M.load()
   local config = M.config
 
   -- Clear cached modules so reloading works
+  package.loaded["aashbones.palette"] = nil
   package.loaded["aashbones.highlights"] = nil
   package.loaded["aashbones.terminal"] = nil
+  package.loaded["lualine.themes.aashbones"] = nil
 
   require("aashbones.highlights").apply(palette, config)
   require("aashbones.terminal").apply(palette)

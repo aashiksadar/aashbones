@@ -13,7 +13,7 @@ M.bg2      = "#18252D"  -- StatusLineNC
 M.bg3      = "#1D2C35"  -- NormalFloat, Pmenu
 M.bg4      = "#20303A"  -- StatusLine
 M.bg5      = "#304552"  -- PmenuSel
-M.bg6      = "#466273"  -- LineNr
+M.bg6      = "#5E7E90"  -- LineNr
 M.bg7      = "#1F3E56"  -- FloatBorder
 
 -- Foreground shades
@@ -74,5 +74,12 @@ M.indent       = "#1D272E"
 M.indent_scope = "#35444E"
 M.spell        = "#CB7A83"
 M.cursor_bg    = "#CEDDD7"
+
+-- UI details
+M.comment      = "#536977"
+M.delimiter    = "#5B7E94"
+M.pmenu_sbar   = "#405A6B"
+M.pmenu_thumb  = "#60869D"
+M.neo_tree_bg  = "#0C1418"
 
 return M
